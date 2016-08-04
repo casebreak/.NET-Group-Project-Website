@@ -1,0 +1,395 @@
+﻿/* 
+    Responsive design ideas:
+    - Make a breakpoint at which the navigation bar goes from horizontal to vertical
+    - Make a breakpoint for the header logo that will swap the picture to display "BNS"
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body 
+{
+    background-color: gray;
+}
+
+#wrapper 
+{
+    width: 100%;
+    max-width: 1000px;
+    /* min-width: 625px; */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.banner /* These rules take effect if banner image does not load */
+{
+    margin-top: 1%;
+    width: 100%; 
+    height: 100%;
+    font-family: Tahoma, Sans-Serif;
+    color: Orange;
+    font-size: 3em;
+    font-weight: bold;
+    text-align: center;
+    text-shadow: 1px 2px black;   
+}
+
+.logo 
+{
+    text-align: center;   
+}
+
+.navList
+{
+    list-style-type: none;
+    text-align: center;    
+}
+
+.navList li
+{
+    display: inline;    
+}
+
+.navList a
+{
+    text-decoration: none;
+    display: inline-block;
+    width: 18.5%;
+    color: White;
+    font-family: Trebuche MS, Sans-Serif;
+    font-size: 1.6em;
+    font-weight: bold;
+    margin-top: 1%;
+    border-bottom: solid thick gray;
+    text-shadow: 1px 2px black;
+}
+
+#content p a:link, .tableLink
+{
+    text-decoration: none;
+    color: #7c9dcc;
+    font-weight: bold;
+    text-shadow: 1px 2px black;
+}
+
+.retTable
+{
+
+}
+
+#content p a:visited
+{
+    text-decoration: none;
+    color: #AAC3E5;
+}
+
+.navList a:hover
+{
+    /*color: #FF8000;  */
+    color: #AAC3E5;
+    border-bottom: solid thick #FF8000;
+}
+
+a.active  /* use this for an active link */
+{
+    color: #AAC3E5;
+    border-bottom: solid thick #FF8000;
+}
+
+#content
+{
+    color: White;
+    font-family: Tahoma, Sans-Serif;
+    font-size: 1.3em;
+    width: 100%-5px; /* -5px to compensate for the thickness of the border */
+    text-align: justify; 
+    border: solid thick #7c9dcc;
+    border-radius: 30px;
+    margin-top: 1%; 
+    height: auto;
+    overflow: auto; 
+}
+
+.BNSwords 
+{
+    color: #FF8000;
+    font-weight: bold;
+    font-size: 1.1em;
+    text-shadow: 1px 1px black;    
+    opacity: 0.9;
+}
+
+#content p
+{
+    padding: 20px;  
+}
+
+#footer p
+{
+    margin-top: 20px;
+    text-align: center;
+    font-size: 0.7em; 
+    color: White;   
+}
+
+img.ben
+{
+    box-shadow: 5px 5px 5px black;
+    margin: 20px;
+    float: left;
+    height: 200px;
+    width: 200px;    
+}
+
+img.scott
+{
+    box-shadow: 5px 5px 5px black; 
+    margin: 20px;
+    float: right;
+    height: 244px;
+    width: 197px;    
+}
+
+.contentHeader
+{
+    color: #FFE994;
+    text-shadow: 1px 1px black;
+    text-align: center;
+    opacity: 0.7;   
+    margin: 15px; 
+}
+
+#DropDowns
+{
+    float: left;
+    margin-bottom: 2%;
+    margin-left: 2%;
+}
+
+.userNumbers
+{
+    color: White;
+    margin: 7%;
+    width: 100%;
+    font-family: Tahoma, Sans-Serif;
+    font-size: 1em;
+    background-color: rgba(210,113,76,0.9);
+    border: solid 3px #7c9dcc;
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px black;
+}
+
+#CompsNums
+{
+    color: White;
+    width: auto;
+    float: right;
+    background-color: rgba(210,113,76,0.9);
+    border: solid 3px #7c9dcc;
+    border-radius: 5px;
+    margin: 3%;
+    margin-top: 1.75%;
+    padding: 1%;
+    box-shadow: 5px 5px 5px black;
+}
+
+.gameButton
+{
+    font-family: Tahoma, Sans-Serif;
+    font-size: 0.85em;
+    font-weight: bold;
+    width: 300px;
+    height: 100px;
+    border: solid 3px #7c9dcc;
+    border-radius: 10px;
+    margin-top: 1.75%;
+    margin-left: 5%;
+    margin-bottom: 2%;
+    float: left;
+    box-shadow: 5px 5px 5px black;
+}
+
+.errorMessage
+{
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #4AAA95;
+    text-shadow: 1px 2px black;
+}
+
+#winningsLabels
+{
+    color: White;
+    width: auto;
+    /*max-width: 277px;*/
+    float: right;
+    background-color: #4AAA95;
+    border: solid 3px #7c9dcc;
+    border-radius: 5px;
+    margin: 3%;
+    margin-top: 1%;
+    padding: 1%;
+    clear: right;
+    box-shadow: 5px 5px 5px black;
+}
+
+#content h2
+{
+    margin-left: 30px;
+    margin-top: 10px;
+}
+
+#contactUs
+{
+    margin: 5px;
+    padding: 10px;
+    float: left;
+}
+
+#submitImage
+{
+   margin-left: 20px;
+}
+
+#cancelImage
+{
+    margin-left: 20px;
+}
+
+#dataForm p .dataForm p
+{
+    font-size: .6em;
+}
+
+#dataGrid
+{
+    padding: 20px;
+    padding-top: 0;
+    margin-bottom: 20px;
+    font-size: .8em;
+    width: inherit;
+}
+
+#ProductsGrid
+{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.productsGrid tr, th, td
+{
+    padding: 10px;
+    border: 1px solid black;
+}
+
+.tHeader
+{
+    color: #FF9D39;
+    text-shadow: 1px 2px black;
+}
+
+.productsGrid tr
+{
+    background-color: white;
+    color: black;
+}
+
+.productsGrid th
+{
+    background-color: #7c9dcc;
+}
+
+.productsGrid th a
+{
+    color: white;
+    text-decoration: none;
+}
+
+.productsGrid tr:hover
+{
+    background-color: #FF9D39;
+}
+
+.buyButton 
+{
+    font-family: Tahoma, Sans-Serif;
+    font-size: 0.6em;
+    font-weight: bold;
+    width: 100px;
+    height: 40px;
+    border: solid 3px #7c9dcc;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px black;
+}
+
+.quantityTB
+{
+    font-family: Tahoma, sans-serif;
+    font-size: 0.8em;
+    font-weight: bold;
+    width: 80px;
+    height: 40px;
+    border: solid 3px #7c9dcc;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px black;
+}
+
+.quantityDD
+{
+    color: White;
+    font-family: Tahoma, Sans-Serif;
+    font-size: 1em;
+    background-color: rgba(210,113,76,0.9);
+    border: solid 3px #7c9dcc;
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px black;
+}
+
+/* Responsive design breakpoints */
+@media(max-width: 580px) 
+{
+    .image
+    {
+        text-align: center;
+    }
+
+    img.ben
+    {
+        float: none; 
+        margin: 0; 
+    }
+
+    img.scott
+    {
+        float: none;  
+        margin: 0; 
+    }
+
+    .navList li
+    {
+        display: block;
+    }
+
+    .navList a
+    {
+        font-size: 1.3em;
+        width: 30%;
+    }
+
+    #content
+    {
+        font-size: 1em;
+    }
+
+    .contentHeader
+    {
+        font-size: 1.2em;
+    }
+
+}/* End of @media 580 resolution */
+
+
+
+
